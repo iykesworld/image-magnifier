@@ -1,0 +1,40 @@
+body,
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    min-width: 700px;
+    background: rgb(202, 201, 201);
+}
+
+.container{
+    width: 650px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(244, 254, 255);
+}
+
+#zoom img{
+    width: 650px;
+    height: 400px;
+}
+
+#lens{
+    position: absolute;
+    border: 2px solid grey;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: none;
+    box-shadow: inset 0 0 10px 2px grey;
+    filter: drop-shadow(0 0 2px grey);
+}
+#lens> *{
+    cursor: none;
+}
